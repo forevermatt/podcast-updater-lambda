@@ -14,8 +14,10 @@ module.exports.run = function(event, context, cb) {
 
 // Your Code
 var action = function(event) {
-  return {
+  var result = {
     message: 'PodcastUpdaterLambda executed successfully!',
     event: event
   };
+  console.log(result);
+  return result;
 };
