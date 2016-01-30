@@ -1,0 +1,29 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "podcastUpdaterLambda lambdas",
+  "Parameters": {
+    "aaLambdaRoleArn": {
+      "Type": "String",
+      "Default": "arn:aws:iam::723319111940:role/prod-podcastUpdaterLambda-r-IamRoleLambda-16A0FK8K7Q694"
+    }
+  },
+  "Resources": {
+    "lPodcastUpdate": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Description": "",
+        "Handler": "aws_modules/podcast/update/handler.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs",
+        "Timeout": 6,
+        "Code": {
+          "S3Bucket": "jaws.prod.useast1.forevermatt-web.s3",
+          "S3Key": "JAWS/podcastUpdaterLambda/prod/lambdas/lPodcastUpdate@1454072197633.zip"
+        },
+        "Role": {
+          "Ref": "aaLambdaRoleArn"
+        }
+      }
+    }
+  }
+}
