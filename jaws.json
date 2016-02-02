@@ -1,0 +1,18 @@
+{
+  "name": "podcastUpdaterLambda",
+  "version": "0.1.0",
+  "location": "https://github.com/forevermatt/podcast-updater-lambda",
+  "author": "",
+  "description": "",
+  "domain": "forevermatt-web.s3",
+  "stages": {
+    "prod": [
+      {
+        "region": "us-east-1",
+        "iamRoleArnLambda": "arn:aws:iam::723319111940:role/prod-podcastUpdaterLambda-r-IamRoleLambda-16A0FK8K7Q694",
+        "iamRoleArnApiGateway": "arn:aws:iam::723319111940:role/prod-podcastUpdaterLambda-r-IamRoleApiGateway-J1LRRP8VUIKZ",
+        "jawsBucket": "jaws.prod.useast1.forevermatt-web.s3"
+      }
+    ]
+  }
+}
