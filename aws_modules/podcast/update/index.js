@@ -60,10 +60,11 @@ module.exports.run = function(event, context, mainCallback) {
       //   console.log(process.env.PODCASTS_FOLDER + '/' + podcastId + '/' + xmlFileName);
       // },
       function(xml, callback) {
-        s3Functions.putFileToS3WithAcl(
+        s3Functions.putFileToS3WithAclAndContentType(
           process.env.PODCASTS_BUCKET,
           process.env.PODCASTS_FOLDER + '/' + podcastId + '/' + xmlFileName,
           'public-read',
+          'application/rss+xml',
           xml,
           callback
         );
