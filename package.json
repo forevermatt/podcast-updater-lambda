@@ -1,15 +1,18 @@
 {
   "name": "podcastUpdaterLambda",
-  "version": "0.0.1",
-  "description": "A JAWS application",
-  "author": "me",
-  "license": "",
+  "version": "0.1.0",
+  "description": "A JAWS application to update podcast XML files in S3",
+  "author": "forevermatt@users.noreply.github.com",
+  "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/"
+    "url": "https://github.com/forevermatt/podcast-updater-lambda"
   },
-  "keywords": [],
+  "keywords": [
+    "podcast",
+    "lambda"
+  ],
   "devDependencies": {},
   "dependencies": {
     "async": "1.5.2",
