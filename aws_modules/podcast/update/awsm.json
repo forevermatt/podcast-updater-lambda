@@ -1,6 +1,9 @@
 {
   "lambda": {
-    "envVars": [],
+    "envVars": [
+      "PODCASTS_BUCKET",
+      "PODCASTS_FOLDER"
+    ],
     "deploy": true,
     "package": {
       "optimize": {

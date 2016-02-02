@@ -20,6 +20,20 @@ module.exports.run = function(event, context, mainCallback) {
     console.log('Podcast ID:', podcastId);
   }
 
+  if ( ! process.env.PODCASTS_BUCKET) {
+    return mainCallback(
+      new Error('No PODCASTS_BUCKET environment variable found.'),
+      null
+    );
+  }
+
+  if ( ! process.env.PODCASTS_FOLDER) {
+    return mainCallback(
+      new Error('No PODCASTS_FOLDER environment variable found.'),
+      null
+    );
+  }
+
   var config;
   var xmlFileName;
 
