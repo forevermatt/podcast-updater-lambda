@@ -1,6 +1,6 @@
 {
   "name": "podcastUpdaterLambda",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JAWS application to update podcast XML files in S3",
   "author": "forevermatt@users.noreply.github.com",
   "license": "MIT",
