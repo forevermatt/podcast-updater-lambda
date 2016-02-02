@@ -20,9 +20,9 @@
     "cloudFormation": {
       "Description": "",
       "Handler": "aws_modules/podcast/update/handler.handler",
-      "MemorySize": 1024,
+      "MemorySize": 128,
       "Runtime": "nodejs",
-      "Timeout": 6
+      "Timeout": 30
     }
   }
 }
