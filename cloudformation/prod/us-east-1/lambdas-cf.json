@@ -18,7 +18,7 @@
         "Timeout": 30,
         "Code": {
           "S3Bucket": "jaws.prod.useast1.forevermatt-web.s3",
-          "S3Key": "JAWS/podcastUpdaterLambda/prod/lambdas/lPodcastUpdate@1454373549794.zip"
+          "S3Key": "JAWS/podcastUpdaterLambda/prod/lambdas/lPodcastUpdate@1454378489080.zip"
         },
         "Role": {
           "Ref": "aaLambdaRoleArn"
