@@ -1,6 +1,6 @@
 {
   "name": "podcastUpdaterLambda",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "location": "https://github.com/forevermatt/podcast-updater-lambda",
   "author": "",
   "description": "",
